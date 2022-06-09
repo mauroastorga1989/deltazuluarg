@@ -1,0 +1,158 @@
+@media screen and (max-width: 576px){
+header {
+    display: block;
+    justify-content: center;
+}   
+header nav ul {
+    margin: auto;
+    font-size: .7rem;
+}
+main {
+    display: block;
+}
+main .main__presentacion__div section p {
+    margin-top: 40px;
+    margin-left: 5px;
+    font-size: .6rem;
+}
+aside {
+    display: block;
+}
+.container__aside {
+    width: 400px;
+    height: 600px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+main aside iframe {
+    width: 360px;
+}
+main aside {
+    margin-top: 20px; 
+}
+main aside .aside__h3__parrafo { 
+    height: 400px;
+    font-size: 15px;
+}
+main .fondo__imagenes {
+    display: grid;
+    grid-template-columns: auto, auto ,auto;
+}
+main .fondo__imagenes .main__imagenes__link {
+    width: 100px;
+    height: 100px;
+}
+article {
+    height: 100%;
+    display: block;
+}
+article section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+article section video {
+        height: 500px;
+        width: 500px;
+}
+article section p {
+    height: 300px;
+    width: 300px;
+    font-size: 15px;
+}
+footer {
+    width: 100%;
+    height: 350px;
+    align-items: center;
+}
+
+footer .contenedor__iconos {
+    width: 100%;
+}
+
+footer .listas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px; 
+}
+footer p {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+    .main__galeria .titulo__galeria {
+      width: 90%;
+      height: 60px;
+      font-size: 2.2rem;
+      border-radius: 15px;
+      align-items: center;
+
+    }
+    .main__galeria #imagenes__galeria {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto;
+     }
+      .main__galeria #imagenes__galeria a img {
+        width: 150px;
+        height: 150px;
+        border-radius: 15%;
+        margin: 8px; }
+
+.main__novedades {
+  width: 100%;
+  height: 900px; 
+}
+  .main__novedades .novedades__elementos {
+    width: 80%;
+    height: 100%; }
+    .main__novedades .novedades__elementos .novedades__video {
+      width: 100%;
+      height: 300px; }
+    .main__novedades .novedades__elementos .novedades__parrafo {
+      font-size: 1.1rem;
+}
+
+
+.main__contacto {
+    background-image: url(../assets/imagenes/14-140131_camouflage-wallpaper-hd.jpg);
+    height: 2000px;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+
+    .main__contacto .terminos__parrafo {
+      margin-top: 20px;
+      font-size: .85rem;
+      width: 100%;
+    }
+
+    .main__nosotros {
+        width: 100%;
+        height: 900px;
+}
+        .main__nosotros .container__nosotros {
+          width: 80%;
+          height: 800px;
+          margin: auto; }
+          .main__nosotros .container__nosotros h2 {
+            font-size: 2.3rem;
+            width: 80%;
+            font-family: Georgia, 'Times New Roman', Times, serif; }
+          .main__nosotros .container__nosotros p {
+            height: 60%;
+            width: 80%;
+            font-size: 1.2rem; }
+        .main__nosotros img {
+          margin-top: 10px;
+          padding: 5px;
+          width: 100%;
+          height: 300px; 
+        }
+
+}

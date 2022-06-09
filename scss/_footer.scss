@@ -1,0 +1,82 @@
+footer{
+    width: $ancho_100;
+    height: 450px;
+    align-items: center;
+    background-color: rgb(24, 23, 22);
+    
+    h3{
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor__iconos{
+        width: 80%;
+        height: 30%;
+        margin: $margin_auto;
+        background-color: #6b5339;
+        display: flex;
+        justify-content: center;
+
+    
+            .social__bar{
+                position: relative;
+                width: 80px;
+                height: 80px;
+                margin: 20px;
+                border-radius: 50%;
+                transition: all .8s;
+                display: flex;
+                cursor: pointer;
+            }
+
+            .social__bar:hover {
+                background-color: #e60073;
+                box-shadow: 0 0 20px #e60073;
+            } 
+            .social__bar:hover:nth-child(2) {
+                background-color: #270992;
+                box-shadow: 0 0 20px #270992;
+            } 
+            .social__bar:hover:nth-child(3) {
+                background-color: #06a729;
+                box-shadow: 0 0 20px #06a729;
+            }  
+            .social__bar:hover:nth-child(4) {
+                background-color: #df0f0f;
+                box-shadow: 0 0 20px #df0f0f;
+            }
+            .social__bar:hover:nth-child(5) {
+                background-color: #2378bd;
+                box-shadow: 0 0 20px #2378bd;
+            }
+            i{
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 1.7rem;
+            }           
+       }
+       .listas{
+           display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+           margin-top: 10px;
+           li:hover{
+               color: white;
+               transition: .8s;
+               cursor: pointer;
+           }
+       }
+       p{
+           color: white;
+           display: flex;
+           justify-content: center;
+           margin-top: 20px;
+           font-size: 17px;          
+       }       
+}

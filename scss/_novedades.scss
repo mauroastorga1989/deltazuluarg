@@ -1,0 +1,28 @@
+.main__novedades {
+	background-image: url(../assets/imagenes/14-140131_camouflage-wallpaper-hd.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+    width: $ancho_100;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    .novedades__elementos {
+            background-color: #35443c98;
+            flex-wrap: wrap;
+            width: 50%;
+            height: 100%;
+            .novedades__video{
+                width: $ancho_100;
+                height: 450px;
+            }
+            .novedades__parrafo {
+                width: 80%;
+                margin: auto;
+    	        font-size: 1.2rem;
+    	        font-family: Georgia, 'Times New Roman', Times, serif;
+    	        color: white;
+            }
+    
+    	
+    }
+}

@@ -88,7 +88,7 @@ main {
       width: 400px;
       height: 400px;
       color: white;
-      font-size: .8rem;
+      font-size: .7rem;
       font-family: Georgia, 'Times New Roman', Times, serif; }
   main aside {
     width: 97%;
@@ -157,6 +157,219 @@ article {
       margin-top: 100px;
       margin-right: 5px; }
 
+.main__galeria {
+  background-image: url(../assets/imagenes/14-140131_camouflage-wallpaper-hd.jpg);
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap; }
+  .main__galeria .titulo__galeria {
+    width: 50%;
+    height: 60px;
+    border-style: ridge;
+    display: flex;
+    color: #fcfdfd;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(29, 53, 29, 0.527);
+    border-radius: 15px;
+    margin: auto;
+    justify-content: center; }
+  .main__galeria #imagenes__galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    justify-content: center; }
+    .main__galeria #imagenes__galeria a img {
+      width: 200px;
+      height: 200px;
+      border-radius: 20%;
+      margin: 8px; }
+    .main__galeria #imagenes__galeria a:hover img {
+      transform: scale(1.3);
+      transition: 1s; }
+  .main__galeria .light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #00000080;
+    transition: transform .8s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0); }
+    .main__galeria .light-box img {
+      width: 60vw;
+      height: 40vw; }
+    .main__galeria .light-box:target {
+      transform: scale(1); }
+  .main__galeria .close {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: #130746;
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    line-height: 40px;
+    border-style: groove; }
+  .main__galeria .next {
+    display: block;
+    background-color: #130746;
+    color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center; }
+
+.main__novedades {
+  background-image: url(../assets/imagenes/14-140131_camouflage-wallpaper-hd.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content: center; }
+  .main__novedades .novedades__elementos {
+    background-color: #35443c98;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100%; }
+    .main__novedades .novedades__elementos .novedades__video {
+      width: 100%;
+      height: 450px; }
+    .main__novedades .novedades__elementos .novedades__parrafo {
+      width: 80%;
+      margin: auto;
+      font-size: 1.2rem;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: white; }
+
+.main__contacto {
+  background-image: url(../assets/imagenes/14-140131_camouflage-wallpaper-hd.jpg);
+  height: 1600px;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .main__contacto form {
+    background-color: #0a270a96;
+    height: 620px;
+    width: 70%;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: center; }
+    .main__contacto form .titulo__contacto {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 50px;
+      color: white; }
+    .main__contacto form .nombre {
+      width: 75%;
+      margin-bottom: 5px;
+      padding: 7px;
+      font-size: 15px;
+      border: none; }
+    .main__contacto form .correo {
+      width: 75%;
+      margin-bottom: 5px;
+      padding: 7px;
+      font-size: 15px;
+      border: none; }
+    .main__contacto form .telefono {
+      width: 75%;
+      margin-bottom: 5px;
+      padding: 7px;
+      font-size: 15px;
+      border: none; }
+    .main__contacto form .mensaje {
+      width: 75%;
+      margin-bottom: 5px;
+      padding: 7px;
+      font-size: 15px;
+      border: none; }
+    .main__contacto form .botones {
+      height: 100px;
+      width: 20%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .main__contacto form .botones .boton1 {
+        font-size: 12px;
+        color: white;
+        background-color: black;
+        height: 30px;
+        width: 300px;
+        cursor: pointer; }
+      .main__contacto form .botones .boton2 {
+        font-size: 12px;
+        color: white;
+        background-color: black;
+        height: 30px;
+        width: 300px;
+        cursor: pointer; }
+  .main__contacto .terminos {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkgrey; }
+  .main__contacto .terminos__parrafo {
+    margin-top: 50px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #2222229c;
+    padding: 12px;
+    border-style: double; }
+
+.main__nosotros {
+  background-image: url(../assets/imagenes/60638-soldados.jpg);
+  width: 100%;
+  height: 1400px;
+  background-attachment: fixed;
+  background-size: cover;
+  display: block; }
+  .main__nosotros .container__nosotros {
+    width: 80%;
+    margin-top: 30px;
+    height: 950px;
+    margin: auto; }
+    .main__nosotros .container__nosotros h2 {
+      background-color: rgba(56, 56, 80, 0.493);
+      border-bottom: double;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border: double;
+      text-align: center;
+      margin: auto;
+      font-size: 2.3rem;
+      color: white;
+      width: 60%;
+      font-family: Georgia, 'Times New Roman', Times, serif; }
+    .main__nosotros .container__nosotros p {
+      border-radius: 15px;
+      background-color: rgba(56, 56, 80, 0.493);
+      height: 60%;
+      width: 60%;
+      border: double;
+      font-size: 1.8rem;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: white;
+      text-align: center;
+      margin: auto; }
+  .main__nosotros img {
+    border-style: groove;
+    margin-top: 20px;
+    padding: 5px;
+    width: 100%;
+    height: 600px; }
+
 footer {
   width: 100%;
   height: 450px;
@@ -222,7 +435,7 @@ footer {
     margin-top: 20px;
     font-size: 17px; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   header {
     display: block;
     justify-content: center; }
@@ -252,11 +465,10 @@ footer {
     font-size: 15px; }
   main .fondo__imagenes {
     display: grid;
-    grid-template-columns: 1fr, 1fr; }
+    grid-template-columns: auto, auto ,auto; }
   main .fondo__imagenes .main__imagenes__link {
-    margin: auto;
-    width: 250px;
-    height: 250px; }
+    width: 100px;
+    height: 100px; }
   article {
     height: 100%;
     display: block; }
@@ -286,4 +498,184 @@ footer {
   footer p {
     display: flex;
     justify-content: center;
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .main__galeria .titulo__galeria {
+    width: 90%;
+    height: 60px;
+    font-size: 2.2rem;
+    border-radius: 15px;
+    align-items: center; }
+  .main__galeria #imagenes__galeria {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto; }
+  .main__galeria #imagenes__galeria a img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15%;
+    margin: 8px; }
+  .main__novedades {
+    width: 100%;
+    height: 900px; }
+  .main__novedades .novedades__elementos {
+    width: 80%;
+    height: 100%; }
+  .main__novedades .novedades__elementos .novedades__video {
+    width: 100%;
+    height: 300px; }
+  .main__novedades .novedades__elementos .novedades__parrafo {
+    font-size: 1.1rem; }
+  .main__contacto {
+    background-image: url(../assets/imagenes/14-140131_camouflage-wallpaper-hd.jpg);
+    height: 2000px;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .main__contacto .terminos__parrafo {
+    margin-top: 20px;
+    font-size: .85rem;
+    width: 100%; }
+  .main__nosotros {
+    width: 100%;
+    height: 900px; }
+  .main__nosotros .container__nosotros {
+    width: 80%;
+    height: 800px;
+    margin: auto; }
+  .main__nosotros .container__nosotros h2 {
+    font-size: 2.3rem;
+    width: 80%;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+  .main__nosotros .container__nosotros p {
+    height: 60%;
+    width: 80%;
+    font-size: 1.2rem; }
+  .main__nosotros img {
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+    height: 300px; } }
+
+@media screen and (max-width: 768px) {
+  header {
+    display: block;
+    justify-content: center; }
+  header nav ul {
+    margin: auto;
+    font-size: .7rem; }
+  main {
+    display: block; }
+  main .main__presentacion__div section p {
+    margin-top: 40px;
+    margin-left: 5px;
+    font-size: .85rem; }
+  aside {
+    display: block; }
+  .container__aside {
+    width: 400px;
+    height: 600px;
+    display: block;
+    justify-content: center;
+    align-items: center; }
+  main aside iframe {
+    width: 360px; }
+  main aside {
+    margin-top: 20px; }
+  main aside .aside__h3__parrafo {
+    height: 400px;
+    font-size: 15px; }
+  main .fondo__imagenes {
+    display: grid;
+    grid-template-columns: auto, auto; }
+  main .fondo__imagenes .main__imagenes__link {
+    margin: 30px;
+    width: 310px;
+    height: 310px; }
+  article {
+    height: 100%;
+    display: block; }
+  article section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center; }
+  article section video {
+    height: 500px;
+    width: 500px; }
+  article section p {
+    height: 300px;
+    width: 300px;
+    font-size: 15px; }
+  footer {
+    width: 100%;
+    height: 350px;
+    align-items: center; }
+  footer .contenedor__iconos {
+    width: 100%; }
+  footer .listas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px; }
+  footer p {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; }
+  .main__galeria .titulo__galeria {
+    width: 90%;
+    height: 60px;
+    font-size: 2.2rem;
+    border-radius: 15px;
+    align-items: center; }
+  .main__galeria #imagenes__galeria {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto; }
+  .main__galeria #imagenes__galeria a img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15%;
+    margin: 8px; }
+  .main__novedades {
+    width: 100%;
+    height: 900px; }
+  .main__novedades .novedades__elementos {
+    width: 80%;
+    height: 100%; }
+  .main__novedades .novedades__elementos .novedades__video {
+    width: 100%;
+    height: 300px; }
+  .main__novedades .novedades__elementos .novedades__parrafo {
+    font-size: 1.1rem; }
+  .main__contacto {
+    background-image: url(../assets/imagenes/14-140131_camouflage-wallpaper-hd.jpg);
+    height: 2000px;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .main__contacto .terminos__parrafo {
+    margin-top: 20px;
+    font-size: .85rem;
+    width: 100%; }
+  .main__nosotros {
+    width: 100%;
+    height: 900px; }
+  .main__nosotros .container__nosotros {
+    width: 80%;
+    height: 800px;
+    margin: auto; }
+  .main__nosotros .container__nosotros h2 {
+    font-size: 2.3rem;
+    width: 80%;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+  .main__nosotros .container__nosotros p {
+    height: 60%;
+    width: 80%;
+    font-size: 1.2rem; }
+  .main__nosotros img {
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+    height: 300px; } }

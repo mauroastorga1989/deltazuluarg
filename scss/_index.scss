@@ -1,0 +1,117 @@
+main{
+    margin: auto;
+    background-color: black;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 500px 250px;
+    grid-area: "section aside"
+                "div div div";
+    justify-content: space-between;
+
+    .main__presentacion__div section{
+        display: flex;
+        justify-content: space-between;    
+        img{
+        margin-top: 40px;
+        margin-left: 10px;
+        width: 560px;
+        height: 360px;
+    }    
+        p{
+        margin-top: 40px;
+        margin-right: 10px;
+        width: 400px;
+        height: 400px;
+        color: white;
+        font-size: .7rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    }
+
+    aside{
+        width: 97%;
+        background-color: rgb(66, 65, 65);
+        height: 660px;
+        margin-left: 10px; 
+        margin-top: 20px;    
+        .aside__h3__parrafo{
+        height: 400px;
+        width: 320px;
+        font-size: 15px;
+        overflow: scroll;
+        margin: auto;
+    }   
+    iframe{
+        width: 325px;
+        height: 250px;
+    }
+    }
+
+    .fondo__imagenes{    
+        background-color: #04130e;   
+
+    .main__imagenes__link{
+        margin-top: 30px;
+        width: 180px;
+        height: 180px;
+        padding: 20px;
+        margin-left: 10px;
+        border-style: hidden;
+        border-color: #69be62;
+        border: 3px;
+        border-radius: 30%;
+    }
+    .main__imagenes__link:hover{
+        transform: scale(1.8);
+        transition: 1s;
+        }
+    }
+}
+article{
+    background-color: rgb(2, 2, 2);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+    section{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        border: 5px solid white;
+        box-shadow: 16px 14px 20px #0000008c;
+        background: linear-gradient(120deg,#222222, #676866, #c5ccc7, #1e8115, #06580d,
+        #0c271f, #69be62, #23471a, #352b20 );
+        background-size: 300%;
+        width: calc(50% + 16px);
+        height: calc(100% + 16px);
+        animation: gradiente 15s ease infinite;
+
+        @keyframes gradiente {
+            0% {
+                background-position: 0% 200%;
+            }
+            50% {
+                background-position: 200% 0%;
+            }
+            100% {
+                background-position: 0% 330%;
+            }
+        }
+
+        video{
+            height: 500px;
+            width: 500px;
+            display: flex;
+        }
+        p{
+            height: 300px;
+            width: 300px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+            margin-top: 100px;
+            margin-right: 5px;
+        }
+    }
+}

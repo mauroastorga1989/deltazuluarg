@@ -204,6 +204,14 @@ footer {
       margin-top: 20px;
       font-size: 17px; }
 
+
+.main__galeria{
+    background-image: url(../assets/imagenes/14-140131_camouflage-wallpaper-hd.jpg);
+    height: 1800px;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 0px;    
+}
 .titulo__galeria{
     width: 600px;
     height: 60px;
@@ -216,13 +224,6 @@ footer {
     margin-bottom: 50px;
     background-color: rgba(29, 53, 29, 0.527);
     border-radius: 15px;
-}
-.main__galeria{
-    background-image: url(../assets/imagenes/14-140131_camouflage-wallpaper-hd.jpg);
-    height: 1800px;
-    background-attachment: fixed;
-    background-size: cover;
-    margin-top: 0px;    
 }
 #imagenes__galeria{
  display: grid;

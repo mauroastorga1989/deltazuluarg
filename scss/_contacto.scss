@@ -1,0 +1,89 @@
+.main__contacto {
+	background-image: url(../assets/imagenes/14-140131_camouflage-wallpaper-hd.jpg);
+	height: 1600px;
+	background-size: cover;
+    width: $ancho_100;
+    display: flex;
+    justify-content: center;
+    form{
+        background-color: #0a270a96;
+    	height: 620px;
+    	width: 70%;
+        margin-top: 10px;
+    	border-radius: 10px;
+        text-align: center;
+   
+        .titulo__contacto {
+        	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        	font-size: 50px;
+        	color: white;
+        }
+        .nombre {
+        	width: 75%;
+        	margin-bottom: 5px;
+        	padding: 7px;
+        	font-size: 15px;
+        	border: none;
+        }
+        .correo {
+        	width: 75%;
+        	margin-bottom: 5px;
+        	padding: 7px;
+        	font-size: 15px;
+        	border: none;
+        }
+        .telefono {
+        	width: 75%;
+        	margin-bottom: 5px;
+        	padding: 7px;
+        	font-size: 15px;
+        	border: none;
+        }
+        .mensaje {
+        	width: 75%;
+        	margin-bottom: 5px;
+        	padding: 7px;
+        	font-size: 15px;
+        	border: none;
+        }
+        .botones {
+        	height: 100px;
+        	width: 20%;
+        	margin: $margin_auto;
+        	display: flex;
+        	flex-wrap: wrap;
+        	justify-content: center;
+
+            .boton1 {
+            	font-size: 12px;
+            	color: white;
+            	background-color: black;
+            	height: 30px;
+            	width: 300px;
+            	cursor: pointer;
+            }
+            .boton2 {
+            	font-size: 12px;
+            	color: white;
+            	background-color: black;
+            	height: 30px;
+            	width: 300px;
+            	cursor: pointer;
+            }
+        }
+
+    }
+    .terminos {
+    	font-size: 20px;
+    	font-family: Georgia, 'Times New Roman', Times, serif;
+    	color: darkgrey;
+    }
+    .terminos__parrafo {
+    	margin-top: 50px;
+    	font-size: 1.1rem;
+    	color: white;
+        background-color: #2222229c;
+        padding: 12px;
+        border-style: double;
+    }
+}
