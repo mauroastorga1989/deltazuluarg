@@ -401,11 +401,11 @@ footer {
       background-color: #e60073;
       box-shadow: 0 0 20px #e60073; }
     footer .contenedor__iconos .social__bar:hover:nth-child(2) {
-      background-color: #270992;
-      box-shadow: 0 0 20px #270992; }
+      background-color: blue;
+      box-shadow: 0 0 20px blue; }
     footer .contenedor__iconos .social__bar:hover:nth-child(3) {
-      background-color: #06a729;
-      box-shadow: 0 0 20px #06a729; }
+      background-color: #15ca15;
+      box-shadow: 0 0 20px #15ca15; }
     footer .contenedor__iconos .social__bar:hover:nth-child(4) {
       background-color: #df0f0f;
       box-shadow: 0 0 20px #df0f0f; }

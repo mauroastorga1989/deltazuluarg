@@ -2,7 +2,7 @@ footer{
     width: $ancho_100;
     height: 450px;
     align-items: center;
-    background-color: rgb(24, 23, 22);
+    background-color: map-get($mapa_colores, gris_oscuro);
     
     h3{
         color: white;
@@ -16,7 +16,7 @@ footer{
         width: 80%;
         height: 30%;
         margin: $margin_auto;
-        background-color: #6b5339;
+        background-color: map-get($mapa_colores, marron);
         display: flex;
         justify-content: center;
 
@@ -33,24 +33,24 @@ footer{
             }
 
             .social__bar:hover {
-                background-color: #e60073;
-                box-shadow: 0 0 20px #e60073;
+                background-color: map-get($mapa_colores , instagram);
+                box-shadow: 0 0 20px map-get($mapa_colores , instagram);
             } 
             .social__bar:hover:nth-child(2) {
-                background-color: #270992;
-                box-shadow: 0 0 20px #270992;
+                background-color: map-get($mapa_colores , facebook);
+                box-shadow: 0 0 20px map-get($mapa_colores , facebook);
             } 
             .social__bar:hover:nth-child(3) {
-                background-color: #06a729;
-                box-shadow: 0 0 20px #06a729;
+                background-color: map-get($mapa_colores , whatsapp);
+                box-shadow: 0 0 20px map-get($mapa_colores , whatsapp);
             }  
             .social__bar:hover:nth-child(4) {
-                background-color: #df0f0f;
-                box-shadow: 0 0 20px #df0f0f;
+                background-color: map-get($mapa_colores , youtube);
+                box-shadow: 0 0 20px map-get($mapa_colores , youtube);
             }
             .social__bar:hover:nth-child(5) {
-                background-color: #2378bd;
-                box-shadow: 0 0 20px #2378bd;
+                background-color: map-get($mapa_colores , telegram);
+                box-shadow: 0 0 20px map-get($mapa_colores , telegram);
             }
             i{
                 color: white;
