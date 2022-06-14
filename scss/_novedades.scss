@@ -3,21 +3,22 @@
 	background-attachment: fixed;
 	background-size: cover;
     width: $ancho_100;
-    height: 900px;
+    height: 100%;
     display: flex;
     justify-content: center;
     .novedades__elementos {
             background-color: #35443c98;
             flex-wrap: wrap;
             width: 50%;
-            height: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
             .novedades__video{
                 width: $ancho_100;
                 height: 450px;
             }
             .novedades__parrafo {
                 width: 80%;
-                margin: auto;
+                margin: $margin_auto;
     	        font-size: 1.2rem;
     	        font-family: Georgia, 'Times New Roman', Times, serif;
     	        color: white;

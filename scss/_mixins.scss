@@ -1,0 +1,5 @@
+@mixin flexbox ($valor-jusify-content,$valor-align-items){
+    display: flex;
+    justify-content: $valor-jusify-content;
+    align-items: $valor-align-items;   
+}

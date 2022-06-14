@@ -63,12 +63,7 @@
             	cursor: pointer;
             }
             .boton2 {
-            	font-size: 12px;
-            	color: white;
-            	background-color: black;
-            	height: 30px;
-            	width: 300px;
-            	cursor: pointer;
+            	@extend .boton1;
             }
         }
 

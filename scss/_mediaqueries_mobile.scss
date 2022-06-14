@@ -8,20 +8,21 @@ header nav ul {
     font-size: .7rem;
 }
 
-
 main {
   width: 100%;
   margin: auto;
   display: block;
+  height: 2150px;
 }
 main .main__presentacion__div section img {
   margin-top: 40px;
-  margin-left: 5px;
-  width: 90%;
-  height: 360px; }
+  width: 95%;
+  height: 360px; 
+  }
 main .main__presentacion__div section {
   display: block;
-  width: auto;
+  width: 90%;
+  margin: auto;
 }
 main .main__presentacion__div section .parrafos p {
   width: 100%;
@@ -36,7 +37,7 @@ aside {
     border-style: groove;
 }
 main aside iframe {
-    padding: 10px;
+    padding: 20px;
     width: 100%;
 }
 main aside .aside__h3__parrafo { 
@@ -52,6 +53,7 @@ main .fondo__imagenes {
     width: 75%;
     margin: auto;
 
+
 }
 
 main .fondo__imagenes .main__imagenes{
@@ -65,6 +67,7 @@ main .fondo__imagenes .main__imagenes{
 main .fondo__imagenes {
   background-color: #04130e;
   display: block;
+  height: auto;
 
 }
 main .fondo__imagenes .main__imagenes {
@@ -74,14 +77,12 @@ main .fondo__imagenes .main__imagenes {
   margin: 45px; }
 
 article {
-    height: 100%;
     display: block;
+
 }
 article section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    width: 90%;
+    margin: auto;
 }
 article section video {
         height: 500px;
@@ -89,8 +90,9 @@ article section video {
 }
 article section p {
     height: 300px;
-    width: 300px;
+    width: 90%;
     font-size: 15px;
+    padding: 10px;
 }
 footer {
     width: 100%;
@@ -100,6 +102,9 @@ footer {
 
 footer .contenedor__iconos {
     width: 100%;
+}
+footer .contenedor__iconos .social__bar {
+  margin: 10px;
 }
 
 footer .listas {
@@ -112,6 +117,10 @@ footer p {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+
+.main__galeria {
+    height: auto ;
 }
 
     .main__galeria .titulo__galeria {
@@ -139,14 +148,13 @@ footer p {
 }
   .main__novedades .novedades__elementos {
     width: 80%;
-    height: 100%; }
+    height: 98%; }
     .main__novedades .novedades__elementos .novedades__video {
       width: 100%;
       height: 300px; }
     .main__novedades .novedades__elementos .novedades__parrafo {
       font-size: 1.1rem;
 }
-
 
 .main__contacto {
     background-image: url(../assets/imagenes/14-140131_camouflage-wallpaper-hd.jpg);

@@ -13,7 +13,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgba(29, 53, 29, 0.527);
     border-radius: 15px;
-    margin: auto;
+    margin: $margin_auto;
     justify-content: center;
 }
 #imagenes__galeria {
@@ -49,8 +49,7 @@
     height: 100vh;
     z-index: 1000; 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox (space-between,center);
     transform: scale(0);
     img {
         width: 60vw;
