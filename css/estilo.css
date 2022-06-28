@@ -73,7 +73,6 @@ header {
 main {
   margin: auto;
   background-color: black;
-  height: 50%;
   display: grid;
   grid-template-columns: 75% 25%;
   grid-template-rows: 500px 250px;
@@ -117,7 +116,7 @@ main {
       overflow: scroll;
       margin: auto; }
     main aside iframe {
-      width: 325px;
+      width: 310px;
       height: 250px; }
   main .fondo__imagenes {
     background-color: #04130e; }
@@ -450,18 +449,21 @@ footer {
     margin-top: 20px;
     font-size: 17px; }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 768px) {
   header {
     display: block;
     justify-content: center; }
+  header h1 {
+    font-size: 40px;
+    margin: auto; }
   header nav ul {
     margin: auto;
-    font-size: .65rem; }
+    font-size: .9rem; }
   main {
     width: 100%;
     margin: auto;
     display: block;
-    height: 2150px; }
+    height: 2100px; }
   main .main__presentacion__div section img {
     margin-top: 40px;
     width: 95%;
@@ -474,15 +476,19 @@ footer {
     width: 100%;
     text-align: center;
     margin-top: 5px;
-    padding: 5px;
-    font-size: 20px; }
+    padding: 5px; }
   aside {
     display: block;
     justify-content: center;
     border-style: groove; }
-  main aside iframe {
-    padding: 20px;
-    width: 100%; }
+  .aside .container__aside {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .main aside iframe {
+    padding: 10px;
+    width: 80%; }
   main aside .aside__h3__parrafo {
     width: auto;
     height: 400px;
@@ -496,9 +502,13 @@ footer {
     margin: auto; }
   main .fondo__imagenes .main__imagenes {
     margin: auto; }
+  main .fondo__imagenes .main__imagenes .main__imagenes__link {
+    width: 180px;
+    height: 180px;
+    margin: auto; }
   .main__imagenes__link {
     padding: 5px;
-    margin-top: 0px; }
+    margin-top: 10px; }
   main .fondo__imagenes {
     background-color: #04130e;
     display: block;
@@ -507,70 +517,249 @@ footer {
     display: block;
     align-items: center;
     justify-items: center;
-    margin: 10px; }
+    margin: 45px; }
   article {
-    display: flex;
-    flex-direction: column; }
+    display: block; }
   article section {
-    width: 95%;
+    width: 90%;
     margin: auto; }
   article section video {
-    height: 300px;
+    height: 500px;
     width: 500px; }
   article section p {
     height: 300px;
     width: 90%;
-    font-size: 12px;
-    padding: 5px;
-    margin-top: auto; }
+    font-size: 22px;
+    padding: 10px;
+    margin-top: 5px; }
   footer {
     width: 100%;
-    height: 100%;
+    height: 400px;
     align-items: center; }
-  footer h3 {
-    text-align: center; }
   footer .contenedor__iconos {
     width: 100%; }
   footer .contenedor__iconos .social__bar {
-    margin: 3px; }
+    margin: 10px; }
   footer .listas {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 10px;
-    margin-left: 15px; }
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px; }
   footer p {
     display: flex;
     justify-content: center;
     margin-top: 20px; }
   .main__galeria {
+    width: 100%;
     height: auto; }
   .main__galeria .titulo__galeria {
     width: 90%;
-    height: 60px;
-    font-size: 1.7rem;
+    height: 80px;
+    font-size: 2.2rem;
     border-radius: 15px;
     align-items: center; }
   .main__galeria #imagenes__galeria {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto; }
+    grid-template-rows: auto auto auto auto;
+    justify-content: center; }
   .main__galeria #imagenes__galeria a img {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     border-radius: 15%;
-    margin: 8px; }
+    margin: 10px; }
   .main__novedades {
     width: 100%;
     height: 900px; }
   .main__novedades .novedades__elementos {
-    width: 95%;
+    width: 80%;
     height: 98%; }
   .main__novedades .novedades__elementos .novedades__video {
     width: 100%;
     height: 300px; }
   .main__novedades .novedades__elementos .novedades__parrafo {
-    font-size: 1.05rem; }
+    font-size: 1.3rem; }
+  .main__contacto {
+    background-image: url(../assets/imagenes/14-140131_camouflage-wallpaper-hd.jpg);
+    height: 2000px;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .main__contacto .terminos__parrafo {
+    margin-top: 20px;
+    font-size: 1rem;
+    width: 100%;
+    height: auto; }
+  .main__nosotros {
+    width: 100%;
+    height: 900px; }
+  .main__nosotros .container__nosotros {
+    width: 80%;
+    height: 800px;
+    margin: auto; }
+  .main__nosotros .container__nosotros h2 {
+    font-size: 2.3rem;
+    width: 80%;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+  .main__nosotros .container__nosotros p {
+    height: 60%;
+    width: 80%;
+    font-size: 1.4rem; }
+  .main__nosotros img {
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+    height: 300px; } }
+
+@media screen and (max-width: 579px) {
+  header {
+    height: 15%;
+    display: flex;
+    flex-direction: column; }
+  header h1 {
+    font-size: 40px;
+    margin: auto; }
+  header .header__nav .header__menu {
+    width: 100%; }
+  .header nav ul {
+    margin: auto;
+    font-size: .65rem; }
+  .main {
+    height: auto;
+    display: block;
+    width: 100%; }
+  main .main__presentacion__div section img {
+    margin-top: 40px;
+    width: 95%;
+    height: 360px; }
+  main .main__presentacion__div section {
+    display: block;
+    width: 95%;
+    margin: auto; }
+  main .main__presentacion__div section .parrafos p {
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 20px; }
+  .aside {
+    width: 95%;
+    display: block;
+    justify-content: center;
+    border-style: groove;
+    margin: auto; }
+  main {
+    margin: auto;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 500px 150px;
+    grid-area: "section aside" "div div div";
+    justify-content: space-between; }
+  main aside iframe {
+    padding: 20px;
+    width: 100%; }
+  main aside .aside__h3__parrafo {
+    width: auto;
+    height: 400px;
+    font-size: 20px;
+    padding: 10px; }
+  main .fondo__imagenes {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    width: 85%;
+    margin: auto;
+    height: 550px;
+    margin-top: 10px; }
+  main .fondo__imagenes .main__imagenes {
+    margin: 15px; }
+  main .fondo__imagenes .main__imagenes .main__imagenes__link {
+    width: 170px;
+    height: 170px;
+    margin: auto; }
+  .main__imagenes__link {
+    padding: 5px;
+    margin-top: 5px; }
+  .main .fondo__imagenes {
+    display: block;
+    width: 95%; }
+  .main .fondo__imagenes .main__imagenes {
+    display: block;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    margin-left: 25px;
+    height: 100%; }
+  .article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+  .article section {
+    width: 95%;
+    height: 550px; }
+  .article section video {
+    height: 400px;
+    width: 200px; }
+  .article section p {
+    height: 250px;
+    width: 90%;
+    font-size: 15px;
+    margin-top: 0px; }
+  .footer {
+    height: 520px;
+    align-items: center; }
+  h3 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding: 10px; }
+  .footer .contenedor__iconos {
+    width: 100%; }
+  .footer .contenedor__iconos .social__bar {
+    margin: 0px;
+    margin-top: 25px; }
+  .footer .listas {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 70px; }
+  footer p {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; }
+  .main__galeria {
+    width: auto;
+    height: 1850px; }
+  .titulo__galeria {
+    width: 90%;
+    height: 60px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center; }
+  .main__galeria #imagenes__galeria {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: start; }
+  .main__galeria #imagenes__galeria a {
+    width: 200px;
+    height: 200px; }
+  main .main__novedades {
+    width: 100%;
+    height: auto; }
+  main .main__novedades .div {
+    width: 100%;
+    height: 98%; }
+  .main__novedades .novedades__elementos .novedades__video {
+    width: 100%;
+    height: 300px; }
+  .main__novedades .novedades__elementos .novedades__parrafo {
+    font-size: .95rem; }
   .main__contacto form {
     width: 95%;
     margin-top: 10px; }
@@ -599,154 +788,6 @@ footer {
   .main__nosotros .container__nosotros p {
     height: 60%;
     width: 90%;
-    font-size: 1.2rem; }
-  .main__nosotros img {
-    margin-top: 10px;
-    padding: 5px;
-    width: 100%;
-    height: 300px; } }
-
-@media (min-width: 569px) and (max-width: 768px) {
-  header {
-    display: block;
-    justify-content: center; }
-  header nav ul {
-    margin: auto;
-    font-size: .7rem; }
-  main {
-    width: 100%;
-    margin: auto;
-    display: block;
-    height: 2150px; }
-  main .main__presentacion__div section img {
-    margin-top: 40px;
-    width: 95%;
-    height: 360px; }
-  main .main__presentacion__div section {
-    display: block;
-    width: 90%;
-    margin: auto; }
-  main .main__presentacion__div section .parrafos p {
-    width: 100%;
-    text-align: center;
-    margin-top: 5px;
-    padding: 5px; }
-  aside {
-    display: block;
-    justify-content: center;
-    border-style: groove; }
-  main aside iframe {
-    padding: 10px;
-    width: 100%;
-    margin: auto; }
-  main aside .aside__h3__parrafo {
-    width: auto;
-    height: 400px;
-    font-size: 20px;
-    padding: 10px; }
-  main .fondo__imagenes {
-    display: grid;
-    grid-template-columns: auto ,auto;
-    grid-template-rows: auto;
-    width: 75%;
-    margin: auto; }
-  main .fondo__imagenes .main__imagenes {
-    margin: auto; }
-  .main__imagenes__link {
-    padding: 5px;
-    margin-top: 10px; }
-  main .fondo__imagenes {
-    background-color: #04130e;
-    display: block;
-    height: auto; }
-  main .fondo__imagenes .main__imagenes {
-    display: block;
-    align-items: center;
-    justify-items: center;
-    margin: 45px; }
-  article {
-    display: block; }
-  article section {
-    width: 90%;
-    margin: auto; }
-  article section video {
-    height: 500px;
-    width: 500px; }
-  article section p {
-    height: 300px;
-    width: 90%;
-    font-size: 15px;
-    padding: 10px; }
-  footer {
-    width: 100%;
-    height: 350px;
-    align-items: center; }
-  footer .contenedor__iconos {
-    width: 100%; }
-  footer .contenedor__iconos .social__bar {
-    margin: 10px; }
-  footer .listas {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 10px; }
-  footer p {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px; }
-  .main__galeria {
-    height: auto; }
-  .main__galeria .titulo__galeria {
-    width: 90%;
-    height: 60px;
-    font-size: 2.2rem;
-    border-radius: 15px;
-    align-items: center; }
-  .main__galeria #imagenes__galeria {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto; }
-  .main__galeria #imagenes__galeria a img {
-    width: 150px;
-    height: 150px;
-    border-radius: 15%;
-    margin: 8px; }
-  .main__novedades {
-    width: 100%;
-    height: 900px; }
-  .main__novedades .novedades__elementos {
-    width: 80%;
-    height: 98%; }
-  .main__novedades .novedades__elementos .novedades__video {
-    width: 100%;
-    height: 300px; }
-  .main__novedades .novedades__elementos .novedades__parrafo {
-    font-size: 1.1rem; }
-  .main__contacto {
-    background-image: url(../assets/imagenes/14-140131_camouflage-wallpaper-hd.jpg);
-    height: 2000px;
-    background-size: cover;
-    width: 100%;
-    display: flex;
-    justify-content: center; }
-  .main__contacto .terminos__parrafo {
-    margin-top: 20px;
-    font-size: .85rem;
-    width: 100%; }
-  .main__nosotros {
-    width: 100%;
-    height: 900px; }
-  .main__nosotros .container__nosotros {
-    width: 80%;
-    height: 800px;
-    margin: auto; }
-  .main__nosotros .container__nosotros h2 {
-    font-size: 2.3rem;
-    width: 80%;
-    font-family: Georgia, 'Times New Roman', Times, serif; }
-  .main__nosotros .container__nosotros p {
-    height: 60%;
-    width: 80%;
     font-size: 1.2rem; }
   .main__nosotros img {
     margin-top: 10px;

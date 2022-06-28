@@ -1,7 +1,6 @@
 main{
     margin: $margin_auto;
     background-color: map-get($mapa_colores, negro);
-    height: 50%;
     display: grid;
     grid-template-columns: 75% 25%;
     grid-template-rows: 500px 250px;
@@ -56,7 +55,7 @@ main{
         margin: $margin_auto;
     }   
     iframe{
-        width: 325px;
+        width: 310px;
         height: 250px;
     }
     }
