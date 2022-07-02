@@ -1,6 +1,6 @@
 footer{
     width: $ancho_100;
-    height: 500px;
+    height: auto;
     align-items: center;
     background-color: map-get($mapa_colores, gris_oscuro);
     
@@ -14,11 +14,12 @@ footer{
 
     .contenedor__iconos{
         width: 80%;
-        height: 30%;
+        height: 25%;
         margin: $margin_auto;
         background-color: map-get($mapa_colores, marron);
         display: flex;
         justify-content: center;
+        border-radius: 30px;
   
             .social__bar{
                 position: relative;
